@@ -1,197 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Travel With Us</title>
+  <meta charset="UTF-8">
+  <title>GitHub Landing Page</title>
   <style>
     * {
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
     }
 
     body {
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: white;
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
-      height: 100vh;
-      color: white;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      padding: 0 20px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #161b22;
     }
 
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+    header img {
+      width: 40px;
     }
 
-    header p {
-      font-size: 1.2em;
-    }
-
-    nav {
-      position: absolute;
-      top: 20px;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    nav a {
+    header nav a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      margin-left: 20px;
+      font-size: 16px;
     }
 
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .packages, .testimonials, .gallery {
-      margin-bottom: 50px;
-    }
-
-    .packages h2, .testimonials h2, .gallery h2 {
+    .hero {
       text-align: center;
+      padding: 100px 20px 60px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
       margin-bottom: 20px;
     }
 
-    .package-grid, .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+    .hero p {
+      font-size: 20px;
+      color: #c9d1d9;
+      margin-bottom: 30px;
     }
 
-    .package, .gallery img {
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    .hero input {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      font-size: 16px;
     }
 
-    .package {
-      background: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .package h3 {
-      margin-bottom: 10px;
-    }
-
-    .package p {
-      font-size: 0.9em;
-      color: #555;
-    }
-
-    .testimonials {
-      background: #e9ecef;
-      border-radius: 10px;
-      padding: 40px 20px;
-    }
-
-    .testimonial {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .testimonial p {
-      font-style: italic;
-      color: #666;
-    }
-
-    .testimonial h4 {
-      margin-top: 10px;
-    }
-
-    .map {
-      margin-top: 40px;
-      height: 300px;
-      background: #ccc url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/OpenStreetMap_logo.svg/320px-OpenStreetMap_logo.svg.png') center center no-repeat;
-      background-size: contain;
-      border-radius: 10px;
+    .hero button {
+      padding: 10px 20px;
+      background-color: #238636;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 0 5px 5px 0;
     }
 
     footer {
-      background: #343a40;
-      color: white;
       text-align: center;
       padding: 20px;
+      background-color: #161b22;
+      color: #8b949e;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
     <nav>
-      <a href="#packages">Packages</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#testimonials">Stories</a>
+      <a href="#">Why GitHub?</a>
+      <a href="#">Team</a>
+      <a href="#">Enterprise</a>
+      <a href="#">Explore</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Pricing</a>
     </nav>
-    <h1>Explore The World</h1>
-    <p>Your dream vacation is just a click away.</p>
   </header>
 
-  <section class="packages" id="packages">
-    <h2>Top Travel Packages</h2>
-    <div class="package-grid">
-      <div class="package">
-        <h3>Paris Getaway</h3>
-        <p>5 nights | Flight + Hotel | $799</p>
-      </div>
-      <div class="package">
-        <h3>Beach Paradise - Bali</h3>
-        <p>7 nights | All-inclusive | $999</p>
-      </div>
-      <div class="package">
-        <h3>Swiss Alps Adventure</h3>
-        <p>5 nights | Ski & Spa | $1199</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="gallery" id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Travel 1" width="100%">
-      <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98" alt="Travel 2" width="100%">
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Travel 3" width="100%">
-    </div>
-  </section>
-
-  <section class="testimonials" id="testimonials">
-    <h2>Customer Stories</h2>
-    <div class="testimonial">
-      <p>"The Bali package was incredible! Everything was taken care of."</p>
-      <h4>- Anjali R.</h4>
-    </div>
-    <div class="testimonial">
-      <p>"Highly recommend their service. Loved the Swiss Alps trip!"</p>
-      <h4>- Raj K.</h4>
-    </div>
-    <div class="testimonial">
-      <p>"Perfect for family vacations. Very professional and helpful."</p>
-      <h4>- Meera P.</h4>
-    </div>
-
-    <div class="map">
-      <!-- Placeholder for Map -->
-    </div>
-  </section>
+  <div class="hero">
+    <h1>Let’s build from here</h1>
+    <p>The world’s leading AI-powered developer platform.</p>
+    <input type="email" placeholder="Email address">
+    <button>Sign up for GitHub</button>
+  </div>
 
   <footer>
-    <p>© 2025 Travel With Us | All rights reserved</p>
+    &copy; 2025 GitHub, Inc. All rights reserved.
   </footer>
 
 </body>
